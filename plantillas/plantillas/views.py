@@ -1,2 +1,4 @@
+from django.shortcuts import render
+
 def simple(request):
-  return 
+  return render(request, 'simple.html', {})
