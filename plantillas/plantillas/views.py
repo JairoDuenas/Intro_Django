@@ -4,6 +4,6 @@ def simple(request):
   return render(request, 'simple.html', {})
 
 def dinamico(request, name):
-  categories = {'code', 'desing', 'marketing'}
+  categories = {'code', 'desing', 'marketing', 'business'}
   context = {'name': name, 'categories': categories}
   return render(request, 'dinamico.html', context)
