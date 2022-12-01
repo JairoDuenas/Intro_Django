@@ -5,12 +5,18 @@
   --color-text: #707789;
   --color-bg: #dedede;
   --font-title: fresh_fruit;
+  --font-text: cafeta;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: var(--font-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
 }
 
 nav {
@@ -51,19 +57,65 @@ nav ul li a:hover {
 
 main {
   background-color: var(--color-bg);
+  width: 100vw;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 footer {
   width: 100vw;
   min-height: 150px;
   background-color: var(--color-text);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer li a {
+  color: var(--color-bg);
+  text-decoration: none;
 }
 
 footer img{
   margin: 25px;
 }
 
+.about {
+  display: flex;
+  padding: 25px;
+}
+
+.about-content {
+  width: 350px;
+  padding: 50px;
+}
+
+.photos {
+  margin-top: 50px;
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.photos img {
+  margin-bottom: 10px;
+}
+
 @font-face {
   font-family: fresh_fruit;
   src: url('../fonts/Fresh_Fruit.ttf');
+}
+
+@font-face {
+  font-family: cafeta;
+  src: url('../fonts/cafeta.ttf');
 }
