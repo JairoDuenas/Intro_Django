@@ -31,3 +31,8 @@ INSTALLED_APPS = [
 
 3. Verificar si la aplicación queda correctamente instalada ejecutar
 $ python3 manage.py check comentarios
+
+### Modelos de datos
+$ python3 manage.py makemigrations
+- hacer la migración
+$ python3 manage.py migrate
