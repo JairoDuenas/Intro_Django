@@ -7,6 +7,27 @@
   <title>Consulta de datos 1</title>
 </head>
 <body>
+  <h3>Buscando elementos que contengan la palabra (new)</h3>
+  <ul>
+    {% for cont in contained %}
+    <li>{{cont.name}}</li>
+    {% endfor %}
+  </ul>
+
+  <h3>Buscando elementos cuyo id es menor o igual a 15</h3>
+  <ul>
+    {% for element2 in filtered2 %}
+    <li>{{element2.email}}</li>
+    {% endfor %}
+  </ul>
+
+  <h3>Obteniendo elementos ordenados por email</h3>
+  <ul>
+    {% for order in orders %}
+    <li>{{order.email}}</li>
+    {% endfor %}
+  </ul>
+
   <h3>Búsqueda limitada y con offset</h3>
   <ul>
     {% for offset in offsets %}

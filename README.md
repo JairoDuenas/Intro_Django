@@ -36,3 +36,11 @@ $ python3 manage.py check comentarios
 $ python3 manage.py makemigrations
 - hacer la migración
 $ python3 manage.py migrate
+
+### Códigos de operadores en búsquedas
+- __lte: menor o igual (lower than equals)
+- __gte: mayor o igual (greater than equals)
+- __lt: menor que (lower than)
+- __gt: mayor que (greater than)
+- __contains: contiene
+- __exact: exacto
