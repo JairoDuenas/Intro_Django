@@ -10,6 +10,8 @@
   <h3>Añadir producto</h3>
   <form action="{% url 'index' %}" method="POST">
     {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Crear Producto">
   </form>
   <hr>
 </body>
