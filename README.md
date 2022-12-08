@@ -44,3 +44,7 @@ $ python3 manage.py migrate
 - __gt: mayor que (greater than)
 - __contains: contiene
 - __exact: exacto
+
+### Administración de grupos y usuarios 
+### Crear super usuario
+- $ python3 manage.py createsuperuser
