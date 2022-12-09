@@ -1,5 +1,11 @@
 from django.contrib import admin
 from .models import Product
 
+class ProductAdmin(admin.ModelAdmin):
+  list_display = ('name', 'short_description', 'stock',)
+  search_fields = ('name', 'short_description',)
+  list_filter = ('stock', 'discount_until',)
+  date_hierarchy = 'discount_until'
+
 # Register your models here.
-admin.site.register(Product)
+admin.site.register(Product, ProductAdmin)
